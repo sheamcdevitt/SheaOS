@@ -9,7 +9,7 @@ const AboutSection: React.FC = () => {
       display='flex'
       flexDirection={{ xs: 'column', sm: 'row' }}
     >
-      <Box>
+      <Box id='about'>
         <Typography className='text-gradient' variant='h1'>
           About me
         </Typography>

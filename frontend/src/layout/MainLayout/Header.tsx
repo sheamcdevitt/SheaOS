@@ -1,16 +1,6 @@
 import React from 'react';
-
-import {
-  AppBar,
-  Badge,
-  Box,
-  IconButton,
-  Link,
-  Toolbar,
-  Typography,
-} from '@mui/material';
-
-import Logo from 'assets/logo.png';
+import { AppBar, Box, Link, Tooltip, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -43,13 +33,32 @@ const Header: React.FC = () => {
           <Link href='/about' underline='none' color='text.primary'>
             <Typography variant='h3'>About</Typography>
           </Link>
-          <Link href='#projects' underline='none' color='text.primary'>
-            <Typography variant='h3'>Projects</Typography>
-          </Link>
-
-          <Link href='#writing' underline='none' color='text.primary'>
-            <Typography variant='h3'>Writing</Typography>
-          </Link>
+          <Tooltip title='Coming soon!' placement='bottom'>
+            <Typography
+              variant='h3'
+              color='lightgrey'
+              sx={{
+                '&:hover': {
+                  cursor: 'pointer',
+                },
+              }}
+            >
+              Projects
+            </Typography>
+          </Tooltip>
+          <Tooltip title='Coming soon!' placement='bottom'>
+            <Typography
+              variant='h3'
+              color='lightgrey'
+              sx={{
+                '&:hover': {
+                  cursor: 'pointer',
+                },
+              }}
+            >
+              Writing
+            </Typography>
+          </Tooltip>
         </Box>
       </Box>
     </AppBar>
