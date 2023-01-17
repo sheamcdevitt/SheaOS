@@ -59,6 +59,9 @@ const Header: React.FC = () => {
               Writing
             </Typography>
           </Tooltip>
+          <Link href='/roadmap' underline='none' color='text.primary'>
+            <Typography variant='h3'>Roadmap</Typography>
+          </Link>
         </Box>
       </Box>
     </AppBar>

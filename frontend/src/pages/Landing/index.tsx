@@ -10,7 +10,7 @@ const Landing: React.FC = () => {
     <>
       <Hero />
 
-      {/* <Products /> */}
+      <Products />
     </>
   );
 };
