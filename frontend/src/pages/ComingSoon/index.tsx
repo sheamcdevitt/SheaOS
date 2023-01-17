@@ -18,7 +18,7 @@ const ComingSoon: React.FC = () => {
         I'm still building this site.
       </Typography>
       <Typography className='text-gradient' variant='h2' textAlign={'center'}>
-        Check back 28th of January 2023.
+        Check back 28th of January 2023
       </Typography>
     </Box>
   );
