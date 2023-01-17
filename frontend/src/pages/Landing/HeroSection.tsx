@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { Box, Link, Tooltip, Typography } from '@mui/material';
 
-import Abstract from 'assets/abstract-placeholder.png';
+import Abstract from 'assets/avatar.png';
 import Avatar from 'assets/avatar.png';
 import Macbook from 'assets/stock-macbook.png';
 
@@ -32,8 +32,14 @@ const Hero: React.FC = () => {
       className='fade-in'
       display='flex'
       flexDirection={{ xs: 'column', sm: 'row' }}
+      mb={8}
     >
-      <Box>
+      <Box
+        width={{
+          xs: '100%',
+          md: '75%',
+        }}
+      >
         <Typography className='text-gradient' variant='h1' mb={2}>
           Hey, I'm Shéa{' '}
         </Typography>
@@ -51,35 +57,24 @@ const Hero: React.FC = () => {
             Project Ark
           </Link>
         </Typography>
-        <Typography className='blurred' variant='h2'>
-          I'm currently building{' '}
-          <Link
-            // className='hover-underline-animation'
-            variant='h2'
-            underline='none'
-            href='https://omnitate.io/'
-            target='_blank'
-            rel='noreferrer'
-            color={'#072d51'}
-          >
-            <span>Omnitate</span>&nbsp;
-          </Link>
-          in public
+        <Typography mt={2} variant='h3'>
+          Welcome to my personal site. Here I share my thoughts, projects and
+          experiences. Need to come back to this Welcome to my personal site.
+          Here I share my thoughts, projects and experien
         </Typography>
       </Box>
-      {/* <Box>
+      <Box display={{ xs: 'none', md: 'flex' }} justifyContent='center'>
         <img
           src={Abstract}
           alt='abstract'
           style={{
-            width: '100%',
             height: '100%',
             objectFit: 'cover',
             objectPosition: 'center',
-            marginLeft: '20px',
+            borderRadius: '50%',
           }}
         />
-      </Box> */}
+      </Box>
     </Box>
   );
 };
