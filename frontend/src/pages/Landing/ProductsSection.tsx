@@ -18,8 +18,8 @@ const Products: React.FC = () => {
       flexDirection={{ xs: 'column', sm: 'column' }}
     >
       <Box>
-        <Typography className='text-gradient' variant='h1' mb={2}>
-          Products
+        <Typography className='text-gradient' variant='h1' mb={2} pb={1}>
+          Let's build something together!
         </Typography>
         <Box mt={{ xs: 2, sm: 4 }}>
           <Typography variant='h3'>

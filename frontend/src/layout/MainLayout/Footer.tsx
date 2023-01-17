@@ -17,14 +17,13 @@ const Footer: React.FC = () => {
         display: 'flex',
         justifyContent: 'space-between',
         gap: '1rem',
-        margin: '40px auto 0',
-
+        margin: '64px auto 0',
         borderTop: '1px solid #eaeaea',
         blur: '10px',
       }}
     >
       <Typography variant='h4' color='text.secondary' align='center'>
-        {'© 2022 Shéa McDevitt'}
+        {'© 2023 Shéa McDevitt'}
       </Typography>
       <Box
         justifyContent={{ xs: 'center', lg: 'space-between' }}
@@ -35,7 +34,7 @@ const Footer: React.FC = () => {
         }}
       >
         <Link
-          href='https://twitter.com/SheaMcDevitt'
+          href='https://twitter.com/_sheamc'
           target='_blank'
           rel='noopener noreferrer'
           color={'#8e88fb '}
@@ -43,7 +42,7 @@ const Footer: React.FC = () => {
           <Twitter />
         </Link>
         <Link
-          href='https://www.linkedin.com/in/sheamcdevitt/'
+          href='https://www.linkedin.com/in/sh%C3%A9a-mcdevitt-401006190/'
           target='_blank'
           rel='noopener noreferrer'
           color={'#8e88fb '}

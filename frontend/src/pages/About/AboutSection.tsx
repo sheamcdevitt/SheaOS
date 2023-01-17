@@ -13,6 +13,12 @@ const AboutSection: React.FC = () => {
         <Typography className='text-gradient' variant='h1'>
           About me
         </Typography>
+        <Typography variant='h2' mb={4}>
+          Here's my story (so far)
+        </Typography>
+        <Typography variant='h4'>
+          I'm a full stack Software Engineer at Project Ark.
+        </Typography>
       </Box>
     </Box>
   );
