@@ -9,7 +9,7 @@ import Wave from 'assets/waves-bg.svg';
 const Landing = lazy(() => import('pages/Landing'));
 const About = lazy(() => import('pages/About'));
 const Roadmap = lazy(() => import('pages/Roadmap'));
-const ComingSoon = lazy(() => import('pages/ComingSoon'));
+
 const MainLayout = lazy(() => import('layout/MainLayout'));
 
 const rootStyle = document.documentElement.style;
@@ -25,12 +25,11 @@ const DefaultRoutes = () => {
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          {/* <Route element={<MainLayout />}> */}
-          {/* <Route path='/' element={<Landing />} /> */}
-          <Route path='/' element={<ComingSoon />} />
-          {/* <Route path='/about' element={<About />} />
-            <Route path='/roadmap' element={<Roadmap />} /> */}
-          {/* </Route> */}
+          <Route element={<MainLayout />}>
+            <Route path='/' element={<Landing />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/roadmap' element={<Roadmap />} />
+          </Route>
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

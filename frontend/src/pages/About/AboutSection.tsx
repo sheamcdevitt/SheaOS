@@ -17,7 +17,11 @@ const AboutSection: React.FC = () => {
           Here's my story (so far)
         </Typography>
         <Typography variant='h4'>
-          I'm a full stack Software Engineer at Project Ark.
+          I’m Braydon, a developer, creative coder, blogger and self-proclaimed
+          designer who specializes in front-end development. My mission is to
+          translate user-focussed designs into pixel-perfect websites or
+          applications that run blazing fast. I'm Shéa, a fullstack developer,
+          building projects in publish.
         </Typography>
       </Box>
     </Box>
