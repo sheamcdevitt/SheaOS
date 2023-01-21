@@ -66,6 +66,14 @@ const Header: React.FC = () => {
           </Tooltip>
           <Link
             className='link'
+            href='/bookshelf'
+            underline='none'
+            color='text.primary'
+          >
+            <Typography variant='h3'>Bookshelf</Typography>
+          </Link>
+          <Link
+            className='link'
             href='/roadmap'
             underline='none'
             color='text.primary'
