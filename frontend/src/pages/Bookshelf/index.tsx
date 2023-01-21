@@ -18,7 +18,7 @@ const Bookshelf: React.FC = () => {
         long-term and have a long-term mindset -Be able to surround yourself
         with a strong and talented team -Be able to make tough decisions and
         take personal responsibility for the success or failure of the business
-        -Be willing to work hard and make sacrifices to achieve success
+        -Be willing to work hard and make sacrifices to achieve success fc
       </Typography>
       <Divider />
     </Box>
