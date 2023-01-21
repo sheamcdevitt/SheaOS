@@ -27,10 +27,15 @@ const Header: React.FC = () => {
             gap: '3rem',
           }}
         >
-          <Link href='/' underline='none' color='text.primary'>
+          <Link className='link' href='/' underline='none' color='text.primary'>
             <Typography variant='h3'>Home</Typography>
           </Link>
-          <Link href='/about' underline='none' color='text.primary'>
+          <Link
+            className='link'
+            href='/about'
+            underline='none'
+            color='text.primary'
+          >
             <Typography variant='h3'>About</Typography>
           </Link>
           <Tooltip title='Coming soon!' placement='bottom'>
@@ -59,7 +64,20 @@ const Header: React.FC = () => {
               Writing
             </Typography>
           </Tooltip>
-          <Link href='/roadmap' underline='none' color='text.primary'>
+          <Link
+            className='link'
+            href='/bookshelf'
+            underline='none'
+            color='text.primary'
+          >
+            <Typography variant='h3'>Bookshelf</Typography>
+          </Link>
+          <Link
+            className='link'
+            href='/roadmap'
+            underline='none'
+            color='text.primary'
+          >
             <Typography variant='h3'>Roadmap</Typography>
           </Link>
         </Box>
