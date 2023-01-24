@@ -1,4 +1,4 @@
-import { Container, Stack, Box, Toolbar, useMediaQuery } from '@mui/material';
+import { Container } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { AppBar, Box, Link, Tooltip, Typography } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (

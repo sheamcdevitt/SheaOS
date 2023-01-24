@@ -1,32 +1,8 @@
-import React, { useEffect, useState } from 'react';
-
-import { Box, Link, Tooltip, Typography } from '@mui/material';
-
-import Abstract from 'assets/avatar.png';
+import React from 'react';
+import { Box, Link, Typography } from '@mui/material';
 import Avatar from 'assets/avatar.png';
-import Macbook from 'assets/stock-macbook.png';
-
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { makeStyles } from '@mui/styles';
-import { Info } from '@mui/icons-material';
-
-const useStyles = makeStyles((theme) => ({
-  image: {
-    width: '80%',
-    height: '80%',
-    objectFit: 'cover',
-    objectPosition: 'center',
-    marginLeft: '20px',
-  },
-  info: {
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
-}));
 
 const Hero: React.FC = () => {
-  const styles = useStyles();
   return (
     <Box
       className='fade-in'
@@ -65,7 +41,7 @@ const Hero: React.FC = () => {
       </Box>
       <Box display={{ xs: 'none', md: 'flex' }} justifyContent='center'>
         <img
-          src={Abstract}
+          src={Avatar}
           alt='abstract'
           style={{
             height: '100%',

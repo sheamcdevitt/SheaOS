@@ -17,8 +17,7 @@ interface WorkSummaryProps {
 }
 
 const WorkSummary: React.FC<WorkSummaryProps> = ({ experience }) => {
-  const { company, role, startDate, endDate, summary, stack, readMore } =
-    experience;
+  const { company, role, startDate, endDate, summary, readMore } = experience;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 

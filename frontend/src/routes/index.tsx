@@ -1,7 +1,5 @@
 import React, { lazy, Suspense } from 'react';
 
-import { Button } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter, Route, Navigate, Routes } from 'react-router-dom';
 
 import Wave from 'assets/waves-bg.svg';
@@ -28,7 +26,9 @@ const DefaultRoutes = () => {
           <Route element={<MainLayout />}>
             <Route path='/' element={<Landing />} />
             <Route path='/about' element={<About />} />
+            <Route path='/bookshelf/:id' element={<Bookshelf />} />
             <Route path='/bookshelf' element={<Bookshelf />} />
+
             <Route path='/roadmap' element={<Roadmap />} />
           </Route>
           <Route path='*' element={<Navigate to='/' replace />} />

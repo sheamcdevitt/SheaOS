@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Link, Tooltip, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const AboutSection: React.FC = () => {
   return (
