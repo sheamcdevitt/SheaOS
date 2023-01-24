@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Work from './Work';
 import AboutSection from './AboutSection';
 import Divider from 'components/Divider';
