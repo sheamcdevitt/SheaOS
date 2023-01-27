@@ -19,8 +19,8 @@ const AboutSection: React.FC = () => {
         <Typography variant='h4'>
           I'm Shéa, a software engineer, with a passion for building products.
           Blending the art of design with the science of programming, my goal is
-          to create user-friendly applications that are both aesthetic and
-          intuitive.
+          to create intuitive and aesthetic applications that focus on the user
+          experience.
         </Typography>
         <Typography mt={2} variant='h4'>
           I'm currently a software engineer at Project Ark, where I work on
