@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <Box
       className='fade-in'
       display='flex'
-      flexDirection={{ xs: 'column', sm: 'row' }}
+      flexDirection={{ xs: 'column-reverse', sm: 'row' }}
       mb={8}
     >
       <Box
@@ -34,12 +34,13 @@ const Hero: React.FC = () => {
           </Link>
         </Typography>
         <Typography mt={2} variant='h3'>
-          Welcome to my personal site. Here I share my thoughts, projects and
-          experiences. Need to come back to this Welcome to my personal site.
-          Here I share my thoughts, projects and experien
+          Welcome to my personal site.
+        </Typography>
+        <Typography variant='h3'>
+          Here you can find out more about me, my projects and my thoughts!
         </Typography>
       </Box>
-      <Box display={{ xs: 'none', md: 'flex' }} justifyContent='center'>
+      <Box display='flex' justifyContent='center' mb={{ xs: 4 }}>
         <img
           src={Avatar}
           alt='abstract'

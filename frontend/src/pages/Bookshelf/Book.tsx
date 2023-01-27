@@ -3,6 +3,19 @@ import { Box, Link, Typography } from '@mui/material';
 
 export type Status = 'Currently Reading' | 'Finished' | 'Want to Read';
 
+const statusToColor = (status: Status) => {
+  switch (status) {
+    case 'Currently Reading':
+      return '#FB4824';
+    case 'Finished':
+      return 'green';
+    case 'Want to Read':
+      return 'warning';
+    default:
+      return 'primary';
+  }
+};
+
 export const titleToId = (title: string) =>
   title.replace(/\s/g, '-').toLowerCase();
 
@@ -12,10 +25,10 @@ export interface BookProps {
   author: string;
   cover: string;
   description: string;
-  // rating: number;
   status: Status;
   dateFinished?: string;
   hasNotes?: boolean;
+  link: string;
 }
 
 const Book: React.FC<BookProps> = ({
@@ -24,14 +37,15 @@ const Book: React.FC<BookProps> = ({
   author,
   cover,
   description,
-  // rating,
   status,
   dateFinished,
   hasNotes,
+  link,
 }) => {
   return (
     <Box
       display='flex'
+      className='hover-grow'
       flexDirection={{ xs: 'column', md: 'row' }}
       width={{
         xs: '100%',
@@ -44,6 +58,9 @@ const Book: React.FC<BookProps> = ({
         borderRadius: '8px',
         boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.25)',
         padding: '2rem',
+      }}
+      onClick={() => {
+        window.open(link, '_blank');
       }}
     >
       <Box
@@ -58,8 +75,13 @@ const Book: React.FC<BookProps> = ({
         <Typography variant='h4'>
           {subtitle} by {author}
         </Typography>
-        <Typography variant='h4'>
-          {status} <span style={{ color: 'green' }}> {dateFinished}</span>
+        <Typography
+          variant='h4'
+          sx={{
+            color: statusToColor(status),
+          }}
+        >
+          {status} {dateFinished}
         </Typography>
         <Typography variant='body1' mt={{ xs: '1rem', md: '2rem' }}>
           {description}

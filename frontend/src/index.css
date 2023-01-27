@@ -93,3 +93,16 @@ code {
   user-select: none; /* Non-prefixed version, currently
                         supported by Chrome, Edge, Opera and Firefox */
 }
+
+/* 
+  on hover of the component, make it appear as if it is getting bigger with a smooth transition
+*/
+
+.hover-grow {
+  transition: all 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
