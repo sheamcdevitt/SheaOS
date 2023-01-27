@@ -24,8 +24,8 @@ const AboutSection: React.FC = () => {
         </Typography>
         <Typography mt={2} variant='h4'>
           I'm currently a software engineer at Project Ark, where I work on
-          building a platform that helps landlords and tenants manage their
-          properties with a focus on community.
+          building a community driven platform that helps landlords and tenants
+          manage their properties.
         </Typography>
         <Typography mt={2} variant='h4'>
           I'm also a freelance developer, where I am currently working on client
