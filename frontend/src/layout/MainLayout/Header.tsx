@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           <Link
             key={index}
             className='link'
-            href={`/${route}`}
+            href={`/${route.toLowerCase()}`}
             underline='none'
             color='text.primary'
           >

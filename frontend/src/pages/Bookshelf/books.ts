@@ -15,6 +15,7 @@ export const books: BookProps[] = [
     status: 'Finished',
     dateFinished: '11/01/2023',
     hasNotes: false,
+    link: 'https://amzn.to/3Hxy5U2',
   },
   {
     title: 'Hooked',
@@ -25,6 +26,7 @@ export const books: BookProps[] = [
     cover: Hooked,
     status: 'Currently Reading',
     hasNotes: false,
+    link: 'https://amzn.to/3wBpRnQ',
   },
   {
     title: 'Animal Farm',
@@ -35,5 +37,6 @@ export const books: BookProps[] = [
     cover: AnimalFarm,
     status: 'Currently Reading',
     hasNotes: false,
+    link: 'https://amzn.to/407Ho4h',
   },
 ];

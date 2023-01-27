@@ -17,11 +17,19 @@ const AboutSection: React.FC = () => {
           Here's my story (so far)
         </Typography>
         <Typography variant='h4'>
-          I’m Braydon, a developer, creative coder, blogger and self-proclaimed
-          designer who specializes in front-end development. My mission is to
-          translate user-focussed designs into pixel-perfect websites or
-          applications that run blazing fast. I'm Shéa, a fullstack developer,
-          building projects in publish.
+          I'm Shéa, a software engineer, with a passion for building products.
+          Blending the art of design with the science of programming, my goal is
+          to create user-friendly applications that are both aesthetic and
+          intuitive.
+        </Typography>
+        <Typography mt={2} variant='h4'>
+          I'm currently a software engineer at Project Ark, where I work on
+          building a platform that helps landlords and tenants manage their
+          properties with a focus on community.
+        </Typography>
+        <Typography mt={2} variant='h4'>
+          I'm also a freelance developer, where I am currently working on client
+          projects and building my portfolio.
         </Typography>
       </Box>
     </Box>
