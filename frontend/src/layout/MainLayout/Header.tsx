@@ -1,5 +1,7 @@
 import React from 'react';
-import { AppBar, Box, Link, Tooltip, Typography } from '@mui/material';
+import { AppBar, Box, Link, Typography } from '@mui/material';
+import HamburgerMenu from './HamburgerMenu';
+import { routes } from './routes';
 
 const Header: React.FC = () => {
   return (
@@ -9,8 +11,19 @@ const Header: React.FC = () => {
         backdropFilter: 'blur(5px)',
         backgroundColor: '#ffffff99',
         boxShadow: 'none',
+        position: 'fixed',
       }}
     >
+      <Box
+        sx={{
+          display: { xs: 'flex', sm: 'none' },
+          justifyContent: 'flex-end',
+          gap: '3rem',
+          margin: '12px 16px',
+        }}
+      >
+        <HamburgerMenu />
+      </Box>
       <Box
         sx={{
           display: { xs: 'none', sm: 'flex' },
@@ -19,67 +32,17 @@ const Header: React.FC = () => {
           margin: '32px auto',
         }}
       >
-        <Box
-          sx={{
-            display: { xs: 'none', sm: 'flex' },
-            justifyContent: 'flex-start',
-            gap: '3rem',
-          }}
-        >
-          <Link className='link' href='/' underline='none' color='text.primary'>
-            <Typography variant='h3'>Home</Typography>
-          </Link>
+        {routes.map((route, index) => (
           <Link
+            key={index}
             className='link'
-            href='/about'
+            href={`/${route}`}
             underline='none'
             color='text.primary'
           >
-            <Typography variant='h3'>About</Typography>
+            <Typography variant='h3'>{route}</Typography>
           </Link>
-          <Tooltip title='Coming soon!' placement='bottom'>
-            <Typography
-              variant='h3'
-              color='lightgrey'
-              sx={{
-                '&:hover': {
-                  cursor: 'pointer',
-                },
-              }}
-            >
-              Projects
-            </Typography>
-          </Tooltip>
-          <Tooltip title='Coming soon!' placement='bottom'>
-            <Typography
-              variant='h3'
-              color='lightgrey'
-              sx={{
-                '&:hover': {
-                  cursor: 'pointer',
-                },
-              }}
-            >
-              Writing
-            </Typography>
-          </Tooltip>
-          <Link
-            className='link'
-            href='/bookshelf'
-            underline='none'
-            color='text.primary'
-          >
-            <Typography variant='h3'>Bookshelf</Typography>
-          </Link>
-          <Link
-            className='link'
-            href='/roadmap'
-            underline='none'
-            color='text.primary'
-          >
-            <Typography variant='h3'>Roadmap</Typography>
-          </Link>
-        </Box>
+        ))}
       </Box>
     </AppBar>
   );

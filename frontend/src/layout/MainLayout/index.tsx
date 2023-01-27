@@ -21,6 +21,6 @@ const CustomBox = styled(Container)(({ theme }) => ({
   margin: '200px auto 12px',
   position: 'relative',
   [theme.breakpoints.down('sm')]: {
-    margin: '40px auto',
+    margin: '80px auto 12px',
   },
 }));
